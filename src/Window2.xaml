@@ -1,0 +1,17 @@
+﻿<Window x:Class="Practic2.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Калькулятор" Height="440" Width="600">
+    <StackPanel>
+        <TextBlock Margin="10"><Run Text="Введите "/><Run Language="ru-ru" Text="первое"/><Run Text=" число  : "/></TextBlock>
+        <TextBox x:Name="Operand1TextBox" Margin="10"/>
+        <TextBlock Margin="10"><Run Text="Введите"/><Run Language="ru-ru" Text=" второе"/><Run Text=" число  : "/></TextBlock>
+        <TextBox x:Name="Operand2TextBox" Margin="10"/>
+        <TextBlock Text="Введите знак действия: " Margin="10"/>
+        <TextBox x:Name="SignTextBox" Margin="10"/>
+        <TextBlock Text="Операции: (+, -, *, /)" Margin="10"/>
+        <Button Content="Вычислить" Click="Calculate"/>
+        <TextBlock x:Name="ResultTextBlock" Margin="10"/>
+        <Button x:Name="Result_Копировать" Content="Назад на главную" Height="45" Width="120" Click="TranslateButton_Click22"/>
+    </StackPanel>
+</Window>
